@@ -37,6 +37,10 @@ public class MRMachineAssign : MonoBehaviour
         emgStopReaders = emgStopReadersHolder.GetComponentsInChildren<MRNodeReader>();
         //PCBboxStatusDisplay = PCBboxStatusHolder.GetComponentInChildren<TMP_Text>();
 
+        PCBboxStatusHolder = GameObject.Find("PCB BOX Reader").GetComponent<MRNodeReader>();
+        PCBboxNumberHolder = GameObject.Find("PCB BOX ID Reader").GetComponent<MRNodeReader>();
+        PCBboxIDHolder = GameObject.Find("PCB BOX Num Reader").GetComponent<MRNodeReader>();
+
         AssignMachineNumber();
     }
     private void Update()
@@ -45,17 +49,27 @@ public class MRMachineAssign : MonoBehaviour
         {
             machineNumberDisplay.text = "Machine Number " + (machineNumber).ToString();
 
-            rFIDDisplay.text = rfidReaders[machineNumber - 1].dataFromOPCUANode;
+            rFIDDisplay.text = "The current cart in this machine is " + rfidReaders[machineNumber - 1].dataFromOPCUANode;
             //Debug.Log("RFID is" + rfidReaders[machineNumber - 1].dataFromOPCUANode);
 
-            emgStopDisplay.text = emgStopReaders[machineNumber - 1].dataFromOPCUANode;
+            if(emgStopReaders[machineNumber - 1].dataFromOPCUANode == "False")
+            {
+                emgStopDisplay.text = "EMERGENCY!!!!!";
+                emgStopDisplay.color = Color.red;
+            }
+            else
+            {
+                emgStopDisplay.text = "No current emergency";
+                emgStopDisplay.color = Color.green;
+            }
             //Debug.Log("EMG Stop is" + emgStopReaders[machineNumber - 1].dataFromOPCUANode);
 
             if (isMachine2)
             {
-                PCBboxStatusDisplay.text = PCBboxStatusHolder.dataFromOPCUANode;
-                PCBboxNumberDisplay.text = PCBboxNumberHolder.dataFromOPCUANode;
-                PCBboxIDDisplay.text = PCBboxIDHolder.dataFromOPCUANode;
+                PCBboxStatusDisplay.text ="PCB Box Presence is " + PCBboxStatusHolder.dataFromOPCUANode ;
+              
+                PCBboxNumberDisplay.text = "PCB Num is " + PCBboxNumberHolder.dataFromOPCUANode;
+                PCBboxIDDisplay.text = "PCB ID is " + PCBboxIDHolder.dataFromOPCUANode;
             }
         }
 
