@@ -392,8 +392,6 @@ MonoBehaviour:
   ConnectionInfo:
   - Behavior: {fileID: 209955407}
     ConnectionName: Forward
-  - Behavior: {fileID: 1193076144}
-    ConnectionName: Forward
   - Behavior: {fileID: 474973696}
     ConnectionName: Forward
   - Behavior: {fileID: 641728092}
@@ -401,6 +399,8 @@ MonoBehaviour:
   - Behavior: {fileID: 1082942394}
     ConnectionName: Forward
   - Behavior: {fileID: 1150022512}
+    ConnectionName: Forward
+  - Behavior: {fileID: 1193076144}
     ConnectionName: Forward
   - Behavior: {fileID: 1349867959}
     ConnectionName: Forward
@@ -3063,6 +3063,94 @@ MonoBehaviour:
     ValueOverride: 0
     Value: 0
     OldValue: 0
+--- !u!1 &422723353
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 422723355}
+  - component: {fileID: 422723354}
+  m_Layer: 0
+  m_Name: FrontMagazine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &422723354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422723353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e09673859bf70514ba7448f6b2b3a1e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  Active: 0
+  FromTemplate: {fileID: 0}
+  realvirtualController: {fileID: 0}
+  HideNonG44Components: 0
+  SceneIsAdditive: 0
+  ForceStop: 0
+  ServerIP: 172.21.5.1
+  ServerPort: 4840
+  SecurityPolicy: 1
+  Path: 
+  SessionTimeoutMs: 60000
+  TopNodeId: Demo.Static.Scalar
+  DebugMode: 0
+  IsConnected: 0
+  IsReconnecting: 0
+  ApplicationName: realvirtual
+  ApplicationURN: urn:realvirtual
+  ProductURI: uri:realvirtual
+  ClientPrivateCertificate: 
+  ClientPublicCertificate: 
+  UserName: 
+  Password: 
+  PasswordSignatureAlgorithm: 3
+  SetDisconnectedOnReadError: 1
+  ReconnectTime: 2000
+  MaxNumberOfNodesPerSubscription: 0
+  SubscriptionPublishingIntervall: 20
+  MaxNotificationsPerPublish: 50
+  RegexWriteNodes: []
+  AutomaticallyInputOnWriteSignals: 0
+  CreateSignals: 1
+  AutomaticallySubscribeOnImport: 1
+  NumberSubsriptions: 0
+  NumberSubscribingNodes: 0
+  CurrentNodeInSubscription: 0
+  CurrentSubscriptionID: 0
+  CurrentClientHandle: 1
+  EventOnConnected:
+    m_PersistentCalls:
+      m_Calls: []
+  EventOnDisconnected:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &422723355
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422723353}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &422839830
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3488,6 +3576,94 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &455375307
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 455375309}
+  - component: {fileID: 455375308}
+  m_Layer: 0
+  m_Name: RobotArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &455375308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455375307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e09673859bf70514ba7448f6b2b3a1e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  Active: 0
+  FromTemplate: {fileID: 0}
+  realvirtualController: {fileID: 0}
+  HideNonG44Components: 0
+  SceneIsAdditive: 0
+  ForceStop: 0
+  ServerIP: 172.21.2.1
+  ServerPort: 4840
+  SecurityPolicy: 1
+  Path: 
+  SessionTimeoutMs: 60000
+  TopNodeId: Demo.Static.Scalar
+  DebugMode: 0
+  IsConnected: 0
+  IsReconnecting: 0
+  ApplicationName: realvirtual
+  ApplicationURN: urn:realvirtual
+  ProductURI: uri:realvirtual
+  ClientPrivateCertificate: 
+  ClientPublicCertificate: 
+  UserName: 
+  Password: 
+  PasswordSignatureAlgorithm: 3
+  SetDisconnectedOnReadError: 1
+  ReconnectTime: 2000
+  MaxNumberOfNodesPerSubscription: 0
+  SubscriptionPublishingIntervall: 20
+  MaxNotificationsPerPublish: 50
+  RegexWriteNodes: []
+  AutomaticallyInputOnWriteSignals: 0
+  CreateSignals: 1
+  AutomaticallySubscribeOnImport: 1
+  NumberSubsriptions: 0
+  NumberSubscribingNodes: 0
+  CurrentNodeInSubscription: 0
+  CurrentSubscriptionID: 0
+  CurrentClientHandle: 1
+  EventOnConnected:
+    m_PersistentCalls:
+      m_Calls: []
+  EventOnDisconnected:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &455375309
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455375307}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &474973695
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7463,6 +7639,94 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 817326389}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &831113276
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 831113278}
+  - component: {fileID: 831113277}
+  m_Layer: 0
+  m_Name: Branch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &831113277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831113276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e09673859bf70514ba7448f6b2b3a1e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  Active: 0
+  FromTemplate: {fileID: 0}
+  realvirtualController: {fileID: 0}
+  HideNonG44Components: 0
+  SceneIsAdditive: 0
+  ForceStop: 0
+  ServerIP: 172.21.4.1
+  ServerPort: 4840
+  SecurityPolicy: 1
+  Path: 
+  SessionTimeoutMs: 60000
+  TopNodeId: Demo.Static.Scalar
+  DebugMode: 0
+  IsConnected: 0
+  IsReconnecting: 0
+  ApplicationName: realvirtual
+  ApplicationURN: urn:realvirtual
+  ProductURI: uri:realvirtual
+  ClientPrivateCertificate: 
+  ClientPublicCertificate: 
+  UserName: 
+  Password: 
+  PasswordSignatureAlgorithm: 3
+  SetDisconnectedOnReadError: 1
+  ReconnectTime: 2000
+  MaxNumberOfNodesPerSubscription: 0
+  SubscriptionPublishingIntervall: 20
+  MaxNotificationsPerPublish: 50
+  RegexWriteNodes: []
+  AutomaticallyInputOnWriteSignals: 0
+  CreateSignals: 1
+  AutomaticallySubscribeOnImport: 1
+  NumberSubsriptions: 0
+  NumberSubscribingNodes: 0
+  CurrentNodeInSubscription: 0
+  CurrentSubscriptionID: 0
+  CurrentClientHandle: 1
+  EventOnConnected:
+    m_PersistentCalls:
+      m_Calls: []
+  EventOnDisconnected:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &831113278
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831113276}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &831121460
 GameObject:
   m_ObjectHideFlags: 0
@@ -7599,6 +7863,94 @@ MonoBehaviour:
     ValueOverride: 0
     Value: 0
     OldValue: 0
+--- !u!1 &847485629
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 847485631}
+  - component: {fileID: 847485630}
+  m_Layer: 0
+  m_Name: Factory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &847485630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847485629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e09673859bf70514ba7448f6b2b3a1e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  Active: 0
+  FromTemplate: {fileID: 0}
+  realvirtualController: {fileID: 0}
+  HideNonG44Components: 0
+  SceneIsAdditive: 0
+  ForceStop: 0
+  ServerIP: 172.21.1.1
+  ServerPort: 4840
+  SecurityPolicy: 1
+  Path: 
+  SessionTimeoutMs: 60000
+  TopNodeId: Demo.Static.Scalar
+  DebugMode: 0
+  IsConnected: 0
+  IsReconnecting: 0
+  ApplicationName: realvirtual
+  ApplicationURN: urn:realvirtual
+  ProductURI: uri:realvirtual
+  ClientPrivateCertificate: 
+  ClientPublicCertificate: 
+  UserName: 
+  Password: 
+  PasswordSignatureAlgorithm: 3
+  SetDisconnectedOnReadError: 1
+  ReconnectTime: 2000
+  MaxNumberOfNodesPerSubscription: 0
+  SubscriptionPublishingIntervall: 20
+  MaxNotificationsPerPublish: 50
+  RegexWriteNodes: []
+  AutomaticallyInputOnWriteSignals: 0
+  CreateSignals: 1
+  AutomaticallySubscribeOnImport: 1
+  NumberSubsriptions: 0
+  NumberSubscribingNodes: 0
+  CurrentNodeInSubscription: 0
+  CurrentSubscriptionID: 0
+  CurrentClientHandle: 1
+  EventOnConnected:
+    m_PersistentCalls:
+      m_Calls: []
+  EventOnDisconnected:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &847485631
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847485629}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &867122787
 GameObject:
   m_ObjectHideFlags: 0
@@ -8244,6 +8596,94 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &895241135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 895241137}
+  - component: {fileID: 895241136}
+  m_Layer: 0
+  m_Name: Measuring
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &895241136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895241135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e09673859bf70514ba7448f6b2b3a1e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  Active: 0
+  FromTemplate: {fileID: 0}
+  realvirtualController: {fileID: 0}
+  HideNonG44Components: 0
+  SceneIsAdditive: 0
+  ForceStop: 0
+  ServerIP: 172.21.6.1
+  ServerPort: 4840
+  SecurityPolicy: 1
+  Path: 
+  SessionTimeoutMs: 60000
+  TopNodeId: Demo.Static.Scalar
+  DebugMode: 0
+  IsConnected: 0
+  IsReconnecting: 0
+  ApplicationName: realvirtual
+  ApplicationURN: urn:realvirtual
+  ProductURI: uri:realvirtual
+  ClientPrivateCertificate: 
+  ClientPublicCertificate: 
+  UserName: 
+  Password: 
+  PasswordSignatureAlgorithm: 3
+  SetDisconnectedOnReadError: 1
+  ReconnectTime: 2000
+  MaxNumberOfNodesPerSubscription: 0
+  SubscriptionPublishingIntervall: 20
+  MaxNotificationsPerPublish: 50
+  RegexWriteNodes: []
+  AutomaticallyInputOnWriteSignals: 0
+  CreateSignals: 1
+  AutomaticallySubscribeOnImport: 1
+  NumberSubsriptions: 0
+  NumberSubscribingNodes: 0
+  CurrentNodeInSubscription: 0
+  CurrentSubscriptionID: 0
+  CurrentClientHandle: 1
+  EventOnConnected:
+    m_PersistentCalls:
+      m_Calls: []
+  EventOnDisconnected:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &895241137
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895241135}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &896239780
 Mesh:
   m_ObjectHideFlags: 0
@@ -9241,6 +9681,94 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 665c91b9a15fae249b76228aa162a388, type: 3}
+--- !u!1 &961278947
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 961278949}
+  - component: {fileID: 961278948}
+  m_Layer: 0
+  m_Name: CameraStation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &961278948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961278947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e09673859bf70514ba7448f6b2b3a1e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  Active: 0
+  FromTemplate: {fileID: 0}
+  realvirtualController: {fileID: 0}
+  HideNonG44Components: 0
+  SceneIsAdditive: 0
+  ForceStop: 0
+  ServerIP: 172.21.3.1
+  ServerPort: 4840
+  SecurityPolicy: 1
+  Path: 
+  SessionTimeoutMs: 60000
+  TopNodeId: Demo.Static.Scalar
+  DebugMode: 0
+  IsConnected: 0
+  IsReconnecting: 0
+  ApplicationName: realvirtual
+  ApplicationURN: urn:realvirtual
+  ProductURI: uri:realvirtual
+  ClientPrivateCertificate: 
+  ClientPublicCertificate: 
+  UserName: 
+  Password: 
+  PasswordSignatureAlgorithm: 3
+  SetDisconnectedOnReadError: 1
+  ReconnectTime: 2000
+  MaxNumberOfNodesPerSubscription: 0
+  SubscriptionPublishingIntervall: 20
+  MaxNotificationsPerPublish: 50
+  RegexWriteNodes: []
+  AutomaticallyInputOnWriteSignals: 0
+  CreateSignals: 1
+  AutomaticallySubscribeOnImport: 1
+  NumberSubsriptions: 0
+  NumberSubscribingNodes: 0
+  CurrentNodeInSubscription: 0
+  CurrentSubscriptionID: 0
+  CurrentClientHandle: 1
+  EventOnConnected:
+    m_PersistentCalls:
+      m_Calls: []
+  EventOnDisconnected:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &961278949
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961278947}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &981040744
 GameObject:
   m_ObjectHideFlags: 0
@@ -11770,6 +12298,94 @@ MonoBehaviour:
     ValueOverride: 0
     Value: 0
     OldValue: 0
+--- !u!1 &1345293749
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1345293751}
+  - component: {fileID: 1345293750}
+  m_Layer: 0
+  m_Name: BackMagazine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1345293750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345293749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e09673859bf70514ba7448f6b2b3a1e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  Active: 0
+  FromTemplate: {fileID: 0}
+  realvirtualController: {fileID: 0}
+  HideNonG44Components: 0
+  SceneIsAdditive: 0
+  ForceStop: 0
+  ServerIP: 172.21.8.1
+  ServerPort: 4840
+  SecurityPolicy: 1
+  Path: 
+  SessionTimeoutMs: 60000
+  TopNodeId: Demo.Static.Scalar
+  DebugMode: 0
+  IsConnected: 0
+  IsReconnecting: 0
+  ApplicationName: realvirtual
+  ApplicationURN: urn:realvirtual
+  ProductURI: uri:realvirtual
+  ClientPrivateCertificate: 
+  ClientPublicCertificate: 
+  UserName: 
+  Password: 
+  PasswordSignatureAlgorithm: 3
+  SetDisconnectedOnReadError: 1
+  ReconnectTime: 2000
+  MaxNumberOfNodesPerSubscription: 0
+  SubscriptionPublishingIntervall: 20
+  MaxNotificationsPerPublish: 50
+  RegexWriteNodes: []
+  AutomaticallyInputOnWriteSignals: 0
+  CreateSignals: 1
+  AutomaticallySubscribeOnImport: 1
+  NumberSubsriptions: 0
+  NumberSubscribingNodes: 0
+  CurrentNodeInSubscription: 0
+  CurrentSubscriptionID: 0
+  CurrentClientHandle: 1
+  EventOnConnected:
+    m_PersistentCalls:
+      m_Calls: []
+  EventOnDisconnected:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &1345293751
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345293749}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1349867958
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12961,6 +13577,94 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff0a2634cb2faa5409d8df03d720eea3, type: 3}
+--- !u!1 &1521358134
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1521358136}
+  - component: {fileID: 1521358135}
+  m_Layer: 0
+  m_Name: Pressing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1521358135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521358134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e09673859bf70514ba7448f6b2b3a1e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  Active: 0
+  FromTemplate: {fileID: 0}
+  realvirtualController: {fileID: 0}
+  HideNonG44Components: 0
+  SceneIsAdditive: 0
+  ForceStop: 0
+  ServerIP: 172.21.9.1
+  ServerPort: 4840
+  SecurityPolicy: 1
+  Path: 
+  SessionTimeoutMs: 60000
+  TopNodeId: Demo.Static.Scalar
+  DebugMode: 0
+  IsConnected: 0
+  IsReconnecting: 0
+  ApplicationName: realvirtual
+  ApplicationURN: urn:realvirtual
+  ProductURI: uri:realvirtual
+  ClientPrivateCertificate: 
+  ClientPublicCertificate: 
+  UserName: 
+  Password: 
+  PasswordSignatureAlgorithm: 3
+  SetDisconnectedOnReadError: 1
+  ReconnectTime: 2000
+  MaxNumberOfNodesPerSubscription: 0
+  SubscriptionPublishingIntervall: 20
+  MaxNotificationsPerPublish: 50
+  RegexWriteNodes: []
+  AutomaticallyInputOnWriteSignals: 0
+  CreateSignals: 1
+  AutomaticallySubscribeOnImport: 1
+  NumberSubsriptions: 0
+  NumberSubscribingNodes: 0
+  CurrentNodeInSubscription: 0
+  CurrentSubscriptionID: 0
+  CurrentClientHandle: 1
+  EventOnConnected:
+    m_PersistentCalls:
+      m_Calls: []
+  EventOnDisconnected:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &1521358136
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521358134}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1532375040
 Mesh:
   m_ObjectHideFlags: 0
@@ -16103,6 +16807,94 @@ MonoBehaviour:
     ValueOverride: 0
     Value: 0
     OldValue: 0
+--- !u!1 &1847445078
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1847445080}
+  - component: {fileID: 1847445079}
+  m_Layer: 0
+  m_Name: Drilling
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1847445079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847445078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e09673859bf70514ba7448f6b2b3a1e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  Active: 0
+  FromTemplate: {fileID: 0}
+  realvirtualController: {fileID: 0}
+  HideNonG44Components: 0
+  SceneIsAdditive: 0
+  ForceStop: 0
+  ServerIP: 172.21.7.1
+  ServerPort: 4840
+  SecurityPolicy: 1
+  Path: 
+  SessionTimeoutMs: 60000
+  TopNodeId: Demo.Static.Scalar
+  DebugMode: 0
+  IsConnected: 0
+  IsReconnecting: 0
+  ApplicationName: realvirtual
+  ApplicationURN: urn:realvirtual
+  ProductURI: uri:realvirtual
+  ClientPrivateCertificate: 
+  ClientPublicCertificate: 
+  UserName: 
+  Password: 
+  PasswordSignatureAlgorithm: 3
+  SetDisconnectedOnReadError: 1
+  ReconnectTime: 2000
+  MaxNumberOfNodesPerSubscription: 0
+  SubscriptionPublishingIntervall: 20
+  MaxNotificationsPerPublish: 50
+  RegexWriteNodes: []
+  AutomaticallyInputOnWriteSignals: 0
+  CreateSignals: 1
+  AutomaticallySubscribeOnImport: 1
+  NumberSubsriptions: 0
+  NumberSubscribingNodes: 0
+  CurrentNodeInSubscription: 0
+  CurrentSubscriptionID: 0
+  CurrentClientHandle: 1
+  EventOnConnected:
+    m_PersistentCalls:
+      m_Calls: []
+  EventOnDisconnected:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &1847445080
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847445078}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1865348558
 GameObject:
   m_ObjectHideFlags: 0
@@ -18788,12 +19580,12 @@ PrefabInstance:
     - target: {fileID: 1603331818341721556, guid: f88301b6397183a449455ed3110ed39d,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 8.841001
+      value: 7.9869995
       objectReference: {fileID: 0}
     - target: {fileID: 1603331818341721556, guid: f88301b6397183a449455ed3110ed39d,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 11.897
+      value: 11.230499
       objectReference: {fileID: 0}
     - target: {fileID: 1603572682567858964, guid: f88301b6397183a449455ed3110ed39d,
         type: 3}
@@ -19570,7 +20362,7 @@ PrefabInstance:
     - target: {fileID: 4813348371461801156, guid: f88301b6397183a449455ed3110ed39d,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 293.66278
+      value: 363.66278
       objectReference: {fileID: 0}
     - target: {fileID: 4813348371461801156, guid: f88301b6397183a449455ed3110ed39d,
         type: 3}
@@ -19756,7 +20548,7 @@ PrefabInstance:
     - target: {fileID: 7841380090652348942, guid: f88301b6397183a449455ed3110ed39d,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 123.98256
+      value: 193.98256
       objectReference: {fileID: 0}
     - target: {fileID: 7841380090652348942, guid: f88301b6397183a449455ed3110ed39d,
         type: 3}
@@ -19851,7 +20643,7 @@ PrefabInstance:
     - target: {fileID: 9106771124030163565, guid: f88301b6397183a449455ed3110ed39d,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 168.98256
+      value: 238.98256
       objectReference: {fileID: 0}
     - target: {fileID: 9106771124030163565, guid: f88301b6397183a449455ed3110ed39d,
         type: 3}
@@ -19894,6 +20686,15 @@ SceneRoots:
   - {fileID: 452539302}
   - {fileID: 4862065073058226}
   - {fileID: 43737870}
+  - {fileID: 1847445080}
+  - {fileID: 961278949}
+  - {fileID: 831113278}
+  - {fileID: 455375309}
+  - {fileID: 895241137}
+  - {fileID: 422723355}
+  - {fileID: 1521358136}
+  - {fileID: 847485631}
+  - {fileID: 1345293751}
   - {fileID: 300448244}
   - {fileID: 1660031675}
   - {fileID: 801714880}
