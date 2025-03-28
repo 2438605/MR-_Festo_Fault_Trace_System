@@ -3,6 +3,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using UnityEngine;
+using TMPro;
 
 /// <summary> 
 /// TCP Client-Server Connection Example.
@@ -12,7 +13,10 @@ using UnityEngine;
 /// <summary> 
 
 public class SendOrder : MonoBehaviour
+    
 {
+    public TMP_Text SendOrdertext;
+
     #region private members 	
     private TcpClient socketConnection;
     private Thread clientReceiveThread;
@@ -32,6 +36,8 @@ public class SendOrder : MonoBehaviour
 
     public string newOrderMessage;
     #endregion
+
+
 
     // Use this for initialization 	
     void Start()
@@ -77,6 +83,7 @@ public class SendOrder : MonoBehaviour
 
                         // Log the received server message
                         Debug.Log("Server message received as: " + serverMessage);
+                        SendOrdertext.text = "Server message received as: " + serverMessage;
                     }
                 }
             }
@@ -120,6 +127,7 @@ public class SendOrder : MonoBehaviour
         newOrderMessage = "444;RequestID=0;MClass=101;MNo=2;ErrorState=0;#PNo= " + partNumber + ";#Aux1Int=" + qty.ToString() + "\r";
         SendMessageToServer(newOrderMessage);
         Debug.Log("New phone order sent to the factory");
+        SendOrdertext.text = "New phone order sent to the factory";
     }
 
     public void RequestImage()

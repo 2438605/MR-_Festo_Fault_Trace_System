@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneChangeManager : MonoBehaviour
+public class Scenechange : MonoBehaviour
 {
     // Set this in the Inspector for each button
     [SerializeField] private string sceneToLoad;
