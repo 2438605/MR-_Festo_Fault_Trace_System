@@ -222,8 +222,7 @@ public bool IsReconnecting;
                 var connectRes = client.Connect();
                 if (connectRes != StatusCode.Good)
                 {
-                    Debug.LogError(
-                        $"OPCUA Interface - Error in connecting to opcua client [{connectRes}], please check if your OPCUA server is running and reachable!");
+                    Debug.LogError($"OPCUA Interface - Error in connecting to opcua client [{connectRes}], please check if your OPCUA server is running and reachable!");
                     IsReconnecting = false;
                     return false;
                 }
