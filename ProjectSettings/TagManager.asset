@@ -10,6 +10,9 @@ TagManager:
   - g4a secondlight
   - NavMeshAgent
   - Align
+  - Crate
+  - UIUpdateManager
+  - Robotino
   layers:
   - Default
   - TransparentFX
