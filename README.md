@@ -49,7 +49,7 @@ The Festo Cyber-Physical factory is an advanced training and research platform d
 <table align="center">
     <tr>
         <td style="padding: 10px; text-align: center;">
-            <img src="Screenshot 2024-11-18 224654.png" alt=" Development 1" width="400" style="margin: 20px;" />
+            <img src="DT .png" alt=" Development 1" width="400" style="margin: 20px;" />
             <br />
             Digital twin 
         </td>
