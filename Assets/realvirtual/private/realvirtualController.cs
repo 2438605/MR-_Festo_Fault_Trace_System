@@ -1134,10 +1134,10 @@ namespace realvirtual
             Invoke("ChangeUIEnable",0.01f);
 
             var inspector = GetChildByNameAlsoHidden("Inspector");
-            if ( InspectorController != null)
-            {
-                    Global.SetActiveIncludingSubObjects(inspector,RuntimeInspectorEnabled);
-            }
+            //if ( InspectorController != null)
+            //{
+            //        Global.SetActiveIncludingSubObjects(inspector,RuntimeInspectorEnabled);
+            //}
             
             ChangedVisual();
             HideGroupsOnStart();
