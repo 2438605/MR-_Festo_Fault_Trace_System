@@ -10,9 +10,9 @@ This is a mixed reality application which will be used to interface with the Fes
             FESTO MACHINES 
         </td>
         <td style="padding: 10px; text-align: center;">
-            <img src="Screenshot 2024-11-18 225450.png" alt="development 2" width="400" style="margin: 20px;" />
+            <img src="carriers.png" alt="development 2" width="400" style="margin: 20px;" />
             <br />
-           ROBO ARM 
+           SYSTEM  
         </td>
     </tr>
     
