@@ -11850,7 +11850,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 7417687127305697436}
+      objectReference: {fileID: 7765507926802608334}
     - target: {fileID: 6293624296088097729, guid: 9514a6ed4d752b84984502ebc2eeb75a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -11864,7 +11864,7 @@ PrefabInstance:
     - target: {fileID: 6293624296088097729, guid: 9514a6ed4d752b84984502ebc2eeb75a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: FindPCBcheck
+      value: GetPCBFullCheck
       objectReference: {fileID: 0}
     - target: {fileID: 6293624296088097729, guid: 9514a6ed4d752b84984502ebc2eeb75a,
         type: 3}
@@ -11874,7 +11874,7 @@ PrefabInstance:
     - target: {fileID: 6293624296088097729, guid: 9514a6ed4d752b84984502ebc2eeb75a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PCBCheck, Assembly-CSharp
+      value: PCBFullCheck, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6293624296088097729, guid: 9514a6ed4d752b84984502ebc2eeb75a,
         type: 3}
@@ -12259,7 +12259,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: b45478888d0c7894ba979e2b5b775adf,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.496
+      value: -0.72
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b45478888d0c7894ba979e2b5b775adf,
         type: 3}

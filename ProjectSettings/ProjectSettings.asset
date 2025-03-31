@@ -143,6 +143,8 @@ PlayerSettings:
   bundleVersion: 11.0.4
   preloadedAssets:
   - {fileID: 11400000, guid: b0c6f617bba769f49b6519ed9a2b4348, type: 2}
+  - {fileID: 11400000, guid: bc85086a52ef2404c96292d571c4d387, type: 2}
+  - {fileID: 411124105153970033, guid: 1ca2351c61fb02240bb64704626054bd, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -961,7 +963,6 @@ PlayerSettings:
   syncCapabilities: 0
   platformCapabilities:
     WindowsStoreApps:
-      EnterpriseAuthentication: False
       OfflineMapsManagement: False
       HumanInterfaceDevice: False
       Location: False
@@ -973,6 +974,7 @@ PlayerSettings:
       PrivateNetworkClientServer: False
       InternetClientServer: False
       VideosLibrary: False
+      BackgroundMediaPlayback: False
       Objects3D: False
       RemoteSystem: False
       BlockedChatMessages: False
@@ -994,10 +996,10 @@ PlayerSettings:
       PointOfService: False
       RecordedCallsFolder: False
       Contacts: False
-      Proximity: False
       InternetClient: True
+      Proximity: False
       CodeGeneration: False
-      BackgroundMediaPlayback: False
+      EnterpriseAuthentication: False
   metroTargetDeviceFamilies:
     Desktop: False
     Holographic: False
